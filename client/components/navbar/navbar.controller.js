@@ -3,8 +3,20 @@
 angular.module('hamstarApp')
   .controller('NavbarCtrl', function ($scope, $location, Auth) {
     $scope.menu = [{
-      'title': 'Home',
-      'link': '/'
+      'title': 'Pantry',
+      'link': '/pantry'
+    },{
+      'title': 'Cook',
+      'link': '/cook'
+    },{
+      'title': 'Community',
+      'link': '/community'
+    },{
+      'title': 'Activity',
+      'link': '/activity'
+    },{
+      'title': 'Alerts',
+      'link': '/alerts'
     }];
 
     $scope.isCollapsed = true;
