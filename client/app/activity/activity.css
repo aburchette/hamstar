@@ -1,0 +1,30 @@
+.graph {
+    position: relative;
+    width: 100%;
+    height: 175px;
+}
+.graph .pig {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 306px;
+    height: 175px;
+}
+.graph .pig.gray {
+    width: 0;
+    -webkit-transition: width 1.5s;
+    transition: width 1.5s;
+    background: url('/assets/images/gray_pig.png') no-repeat top left transparent;
+}
+.graph .pig.pink {
+    background: url('/assets/images/pink_pig.png') no-repeat top left transparent;
+}
+.graph .pig.green {
+    background: url('/assets/images/green_pig.png') no-repeat top left transparent;
+}
+.graph .pig.blue {
+    background: url('/assets/images/blue_pig.png') no-repeat top left transparent;
+}
+.graph .pig.orange {
+    background: url('/assets/images/orange_pig.png') no-repeat top left transparent;
+}
