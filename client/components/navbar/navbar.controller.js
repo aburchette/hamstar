@@ -14,9 +14,6 @@ angular.module('hamstarApp')
     },{
       'title': 'Activity',
       'link': '/activity'
-    },{
-      'title': 'Alerts',
-      'link': '/alerts'
     }];
 
     $scope.isCollapsed = true;

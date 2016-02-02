@@ -2,7 +2,8 @@ node_modules
 public
 .tmp
 .idea
+.DS_Store
 client/bower_components
 dist
-/server/config/local.env.js
+/server/config/local.env.js4
 npm-debug.log
