@@ -64,6 +64,10 @@
 .graph .pig.orange {
     background: url('/assets/images/orange_pig.png') no-repeat top left transparent;
 }
+.orange { color: #f7941e;}
+.blue { color: #25aae1;}
+.pink { color: #f27db2;}
+.green { color: #8dc63f;}
 .badges .pig.pink,
 .badges .pig.blue,
 .badges .pig.orange {

@@ -10,15 +10,37 @@
     <div class="row">
         <div class="col-md-12">
 
-        	<h4>Filter:</h4>
-            <input type="text" placeholder="search items" id="itemSearch" ng-model="search" class="form-control" />
+        	<h4>Expiring</h4>
 
-        		<div ng-repeat="(key, value) in items">
-        			<h5 class="foodgroup" ng-show="(value | filter:search).length > 0">{{ key }}</h5>
-        			<ul ng-show="(value | filter:search).length > 0">
-        				<li ng-repeat="item in value | filter:search">{{ item }}
-        			</ul>
-        		</div>
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-7 large">ITEM</div>
+                <div class="col-xs-3 large">DATE</div>
+            </div>
+
+            <div class="row" ng-repeat="item in expired">
+                <a href="/cook" class="pantry-item">
+                    <div class="col-xs-2 center"><span class="fa fa-circle" style="color:rgb({{item.indicator_rgb.red}}, {{item.indicator_rgb.green}}, {{item.indicator_rgb.blue}})"></span> </div>
+                    <div class="col-xs-7">{{item.name}}</div>
+                    <div class="col-xs-3 middle">{{item.TTL}}</div>
+                </a>
+            </div>
+            <br>
+            <h4>Inventory</h4>
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-7 large">ITEM</div>
+                <div class="col-xs-3 large">DATE</div>
+            </div>
+
+            <div class="row" ng-repeat="item in inv">
+                <a href="/cook" class="pantry-item">
+                    <div class="col-xs-2 center"><span class="fa fa-circle" style="color:rgb({{item.indicator_rgb.red}}, {{item.indicator_rgb.green}}, {{item.indicator_rgb.blue}})"></span></div>
+                    <div class="col-xs-7">{{item.name}}</div>
+                    <div class="col-xs-3 middle">{{item.TTL}}</div>
+                </a>
+            </div>
+
         </div>
     </div>
 </div>

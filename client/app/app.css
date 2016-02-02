@@ -63,7 +63,7 @@ body {
   font-family: Oswald, sans-serif;
 }
 .row {
-  font-family: Arial, sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 .row p {
   line-height: 1.6em;
@@ -99,6 +99,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 .largest {
     font-size: 1.75em;
+}
+.center {
+  text-align: center;
 }
 .bar {
     background-color: #404040;

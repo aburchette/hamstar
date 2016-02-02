@@ -3,18 +3,32 @@
     text-align: center;
 }
 .share-icons .fa {
+    color: inherit;
     margin: 0 0.2em;
     text-decoration: none;
 }
-.share-icons .fa-envelope {
-    color: inherit;
-}
-.share-icons .fa-twitter-square {
+.share-icons .fa.fa-twitter-square {
     color: #00aeef;
 }
-.share-icons .fa-facebook-square {
+.share-icons .fa.fa-facebook-square {
     color: #0e76bc;
 }
 .donate img {
+    max-width: 60%;
     margin: 2em auto 2em;
+}
+.pull-right.share-icons {
+    max-width: 40%;
+    margin: 1em 0 0;
+}
+@media (max-width: 500px) {
+.makesmall .share-icons .fa {
+    font-size: 1em;
+}
+.makesmall .pull-right.share-icons {
+    margin: 0.5em 0 0;
+}
+}
+.moretop {
+    padding-top: 2.2em;
 }

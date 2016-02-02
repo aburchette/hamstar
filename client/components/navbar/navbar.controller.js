@@ -6,17 +6,14 @@ angular.module('hamstarApp')
       'title': 'Pantry',
       'link': '/pantry'
     },{
-      'title': 'Shopping List',
-      'link': '/shopping-list'
-    },{
       'title': 'Cook',
       'link': '/cook'
     },{
       'title': 'Community',
       'link': '/community'
     },{
-      'title': 'Activity',
-      'link': '/activity'
+      'title': 'Shopping List',
+      'link': '/shopping-list'
     }];
 
     $scope.isCollapsed = true;

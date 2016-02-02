@@ -3,7 +3,7 @@
 
 <div class="bar">
     <div class="container">
-        <h3><span class="fa fa-bar-chart"></span> Activity</h3>
+        <h3><span class="fa fa-pie-chart"></span> Activity</h3>
     </div>
 </div>
 
@@ -16,7 +16,7 @@
                 <div class="pig gray" data-percent="saved"></div>
             </div>
             <div>
-                <h5>You: {{ items.saved.you }}</h5>
+                <h5 class="green">You: {{ items.saved.you }}</h5>
                 <h5>Community: {{ items.saved.percentage }}%</h5>
             </div>
         </div>
@@ -27,7 +27,7 @@
                 <div class="pig gray" data-percent="used"></div>
             </div>
             <div>
-                <h5>You: {{ items.used.you }}</h5>
+                <h5 class=" pink">You: {{ items.used.you }}</h5>
                 <h5>Community: {{ items.used.percentage }}%</h5>
             </div>
         </div>
@@ -38,7 +38,7 @@
                 <div class="pig gray" data-percent="donated"></div>
             </div>
             <div>
-                <h5>You: {{ items.donated.you }}</h5>
+                <h5 class=" blue">You: {{ items.donated.you }}</h5>
                 <h5>Community: {{ items.donated.percentage }}%</h5>
             </div>
         </div>
@@ -49,7 +49,7 @@
                 <div class="pig gray" data-percent="recycled"></div>
             </div>
             <div>
-                <h5>You: {{ items.recycled.you }}</h5>
+                <h5 class=" orange">You: {{ items.recycled.you }}</h5>
                 <h5>Community: {{ items.recycled.percentage }}%</h5>
             </div>
         </div>
