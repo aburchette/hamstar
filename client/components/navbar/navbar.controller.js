@@ -6,6 +6,9 @@ angular.module('hamstarApp')
       'title': 'Pantry',
       'link': '/pantry'
     },{
+      'title': 'Shopping List',
+      'link': '/shopping-list'
+    },{
       'title': 'Cook',
       'link': '/cook'
     },{

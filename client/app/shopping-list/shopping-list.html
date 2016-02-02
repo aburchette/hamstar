@@ -1,0 +1,40 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="bar">
+    <div class="container">
+        <h3><span class="fa fa-shopping-basket"></span> Shopping List</h3>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+
+        	<h4>Filter</h4>
+            <input type="text" placeholder="search items" id="itemSearch" ng-model="search" class="form-control" />
+
+            <br>
+            <h4>To Buy</h4>
+            <ul>
+            	<li ng-repeat="item in tobuy track by $index">
+            		<a class="item" ng-click="add(item)" ng-bind-html="item">{{ item }}</a>
+            	</li>
+            </ul>
+
+        </div>
+        <div class="col-xs-12 col-md-6">
+
+        	<h4>List of Items</h4>
+    		<div ng-repeat="(key, value) in items">
+    			<h5 class="foodgroup" ng-show="(value | filter:search).length > 0">{{ key }}</h5>
+    			<ul ng-show="(value | filter:search).length > 0">
+    				<li ng-repeat="item in value | filter:search">
+    					<a class="item" ng-click="add(item)" ng-bind-html="item">{{ item }}</a>
+    				</li>
+    			</ul>
+    		</div>
+        </div>
+    </div>
+</div>
+
+<div ng-include="'components/footer/footer.html'"></div>

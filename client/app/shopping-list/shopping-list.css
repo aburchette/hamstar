@@ -1,0 +1,23 @@
+.foodgroup {
+	color: #aaa;
+}
+.item {
+	color: inherit;
+	cursor: pointer;
+	padding-bottom: 0.2em;
+}
+.item:hover,
+.item:focus {
+	color: inherit;
+}
+.item i {
+    color: #fff;
+    border-radius: 20px;
+    font-size: 0.7em;
+    width: 13px;
+    height: 13px;
+    padding: 0px 3px;
+    background-color: #f27db2;
+    margin: 0 4px;
+    display: inline-block;
+}

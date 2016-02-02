@@ -21,7 +21,7 @@
         <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/signup')}"><a href="/signup">Sign up</a></li>
         <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/login')}"><a href="/login" class="fa fa-sign-in larger"></a></li>
         <li ng-show="isLoggedIn()"><p class="navbar-text">Hello {{ getCurrentUser().name }}</p> </li>
-        <li><a href='/items' class="fa fa-plus-circle large"></a></li>
+        <li><a href='/shopping-list' class="fa fa-plus-circle large"></a></li>
         <li ng-show="isLoggedIn()" ng-class="{active: isActive('/settings')}"><a href="/settings"><span class="fa fa-user large"></span></a></li>
         <li ng-show="isLoggedIn()" ng-class="{active: isActive('/logout')}"><a href="" ng-click="logout()" class="fa fa-sign-out larger"></a></li>
       </ul>
