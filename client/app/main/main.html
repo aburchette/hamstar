@@ -1,12 +1,70 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
-<header class="hero-unit" id="banner">
-  <div class="container">
-    <h1>'Allo, 'Allo!</h1>
-    <p class="lead">Kick-start your next web app with Angular Fullstack</p>
-    <img src="assets/images/yeoman.png" alt="I'm Yeoman">
-  </div>
-</header>
+
+<div class="bar">
+    <div class="container">
+        <h3><span class="fa fa-bar-chart"></span> Activity</h3>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <h4>Money Saved</h4>
+            <div class="graph">
+                <div class="pig green"></div>
+                <div class="pig gray" data-percent="saved"></div>
+            </div>
+            <div>
+                <h5>You: {{ items.saved.you }}</h5>
+                <h5>Community: {{ items.saved.percentage }}%</h5>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <h4>Food Used</h4>
+            <div class="graph">
+                <div class="pig pink"></div>
+                <div class="pig gray" data-percent="used"></div>
+            </div>
+            <div>
+                <h5>You: {{ items.used.you }}</h5>
+                <h5>Community: {{ items.used.percentage }}%</h5>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <h4>Food Donated</h4>
+            <div class="graph">
+                <div class="pig blue"></div>
+                <div class="pig gray" data-percent="donated"></div>
+            </div>
+            <div>
+                <h5>You: {{ items.donated.you }}</h5>
+                <h5>Community: {{ items.donated.percentage }}%</h5>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <h4>Food Recycled</h4>
+            <div class="graph">
+                <div class="pig orange"></div>
+                <div class="pig gray" data-percent="recycled"></div>
+            </div>
+            <div>
+                <h5>You: {{ items.recycled.you }}</h5>
+                <h5>Community: {{ items.recycled.percentage }}%</h5>
+            </div>
+        </div>
+        <hr>
+        <div class="col-xs-12">
+            <h4>Badges</h4>
+            <div class="badges">
+                <div class="pig blue" data-toggle="tooltip" title="Hooray!"></div>
+                <div class="pig pink"></div>
+                <div class="pig orange"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div class="container">
   <div class="row">

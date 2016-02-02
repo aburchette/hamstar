@@ -3,18 +3,10 @@
 angular.module('hamstarApp')
   .controller('ActivityCtrl', function ($scope, $http) {
     $scope.items = {
-        saved: {
-
-        },
-        used: {
-
-        },
-        donated: {
-
-        },
-        recycled: {
-
-        }
+        saved: {},
+        used: {},
+        donated: {},
+        recycled: {}
     };
     $scope.message = 'Hello';
     $('[data-percent]').css('width','0');
